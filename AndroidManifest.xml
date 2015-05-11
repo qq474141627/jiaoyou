@@ -50,9 +50,6 @@
             android:name="com.tt.jiaoyou.ui.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.tt.jiaoyou.ui.Activity_Start"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.tt.jiaoyou.ui.Activity_Video"
             android:screenOrientation="portrait" />
         <activity
