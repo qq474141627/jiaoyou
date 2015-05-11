@@ -20,32 +20,33 @@ import android.view.View.OnClickListener;
 import android.widget.TextView;
 
 public class Dialog_tip extends Activity{
-	private int price = 15;
+	private int price = 1500;
 	private View pView;
 	private int msgId = MsgUtil.MSG_VIDEO1;
 	private SharedPreferences preferences; 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.dialog_warning2);
+		setContentView(R.layout.dialog_tip);
 		if(getIntent() == null) finish() ;
 		preferences = PreferenceManager.getDefaultSharedPreferences(this); 
 		msgId = getIntent().getIntExtra("msg", 0);
 		pView = findViewById(R.id.pb);
 		TextView text = (TextView) findViewById(R.id.text);
 		if(msgId == MsgUtil.MSG_VIDEO1){
-			price = 10;
+			price = 1000;
 			text.setText(getString(R.string.msg_video1));
 		}else if(msgId == MsgUtil.MSG_VIDEO2){
-			price = 15;
+			price = 1500;
 			text.setText(getString(R.string.msg_video2));
 		}else if(msgId == MsgUtil.MSG_MESSAGE || msgId == MsgUtil.MSG_HI || msgId == MsgUtil.MSG_GIFT){
-			price = 5;
+			price = 500;
 			text.setText(getString(R.string.msg_message));
 		}else if(msgId == MsgUtil.MSG_VIP){
-			price = 15;
+			price = 1500;
 			text.setText(getString(R.string.msg_vip));
 		}
+		price = 100;
 		findViewById(R.id.btn_no).setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
