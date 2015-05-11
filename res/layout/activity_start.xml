@@ -1,0 +1,12 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+    <include layout="@layout/dialog_warning" android:id="@+id/dialog_warning"
+        android:visibility="visible"/>
+    <include layout="@layout/dialog_libao" android:id="@+id/dialog_libao"
+        android:visibility="gone"/>
+    <include layout="@layout/progress_bar" android:id="@+id/pb"
+        android:visibility="gone"/>
+</RelativeLayout>

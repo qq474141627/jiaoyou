@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">同城约吧</string>
+    <string name="action_settings">Settings</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">努力加载中...</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新...</string>
+    <string name="loding">加载中&#8230;</string>
+    
+    <string name="actionbar_title1">视频秀</string>
+    <string name="actionbar_title2">约吧</string>
+    <string name="actionbar_title3">艳遇</string>
+    <string name="actionbar_title4">VIP</string>
+    <string name="actionbar_photoinfo">个人资料</string>
+    
+    <string name="dialog_warning_title">警\r\r\r\r告</string>
+    <string name="app_about_scan">猎艳视频已通过安全扫描</string>
+    <string name="dialog_warning_content">严禁未满18岁人士使用本物品；不可将本物品内容派发，传阅，出售，出租，交给会借予年龄未满18岁的人士出示，播放或播映。
+
+\n\nThis article may be objectionable content; not the content of the articles distributed, circulated, sold, rented, will be lent to persons under the age of 18 years to produce, broadcast or broadcast.
+
+\n\n本物品供个人自由使用，无意与任何一个国家或地区的法律相抵触亦无任何政治倾向，但请遵守本物品注册地只法律，所有个人言论不代表本物品立场，与本物品立场无关，资费拾陆元，本物品不对其内容负责，假若内容涉及侵权，请立即联络我们，我们将立即删除，并向所有持版权者致最深的歉意。
+
+\n\n本物品内容受美国法律保护，网站在美国进行维护，内容收集于全世界互联网。
+
+\n\n友情提示：请勿长时间观看影视，注意保护视力并预防近视，合理安排时间，享受健康生活。</string>
+    <string name="dialog_warning_btn">—满18岁，点这里—</string>
+    <string name="dialog_libao_text">每天登陆即可领取奖励，每天仅限领取一次，奖励丰富，大量金币等你领取仅需拾陆元，金币可以让你获得更好的体验，点击领取即可，信息费统一由运营商代收。</string>
+    <string name="dialog_libao_btn">领取</string>
+    <string name="exit_click">再按一次退出程序</string>
+    
+    <string name="ok">确    定</string>
+    <string name="money15">确    定</string>
+    <string name="money20">确    定</string>
+    <string name="str_exit_text1">"这里有1200万女性用户
+这里有360万女性自拍视频
+这里有4500万真实照片"</string> 
+    <string name="str_exit_text2">"在这里你可以找到心仪的对象，不用
+再去约炮啦，找个稳定的妹纸不是更好么
+找个妹纸聊天仅需20元送你大量金币和妹纸
+聊天去吧"</string>
+    <string name="msg_video1">"1、服务条款的接受
+ 欢迎使用同城美女视频约会软件，同城美女视频约会是约会约会活动的综合信息服务平台。使用的服务之前代表您承诺遵守本服务条款。
+
+ 2、隐私保护
+尊重用户个人隐私是我们的一项基本原则，您的个人资料的使用将受到中国有关隐私的法律和本公司《隐私保护声明》之规范。
+
+3、服务说明
+通过互联网为用户提供网络服务，包括在线及无线的相关业务。 同城美女视频约会在提供网络服务时，会对查看美女视频网络服务收取拾元费用，在此情况下，会在相关页面上做明确的提示。如用户拒绝支付该等费用，则不能使用相关的网络服务。
+
+ 4、用户行为
+用户单独承担发布内容的责任。用户对服务的使用是根据所有适用于服务的地方法律、国家法律和国际法律标准的。"</string>
+    <string name="msg_video2">"1、服务条款的接受
+ 欢迎使用同城美女视频约会软件，同城美女视频约会是约会约会活动的综合信息服务平台。使用的服务之前代表您承诺遵守本服务条款。
+
+ 2、隐私保护
+尊重用户个人隐私是我们的一项基本原则，您的个人资料的使用将受到中国有关隐私的法律和本公司《隐私保护声明》之规范。
+
+3、服务说明
+通过互联网为用户提供网络服务，包括在线及无线的相关业务。 同城美女视频约会在提供网络服务时，会对查看美女视频网络服务收取十伍元费用，在此情况下，会在相关页面上做明确的提示。如用户拒绝支付该等费用，则不能使用相关的网络服务。
+
+ 4、用户行为
+用户单独承担发布内容的责任。用户对服务的使用是根据所有适用于服务的地方法律、国家法律和国际法律标准的。"</string>
+     <string name="msg_message">"1、服务条款的接受
+ 欢迎使用同城美女视频约会软件，同城美女视频约会是约会约会活动的综合信息服务平台。使用的服务之前代表您承诺遵守本服务条款。
+
+ 2、隐私保护
+尊重用户个人隐私是我们的一项基本原则，您的个人资料的使用将受到中国有关隐私的法律和本公司《隐私保护声明》之规范。
+
+3、服务说明
+通过互联网为用户提供网络服务，包括在线及无线的相关业务。 同城美女视频约会在提供网络服务时，会对给美女发私信、打招呼、送礼物等网络服务收取五元费用，在此情况下，会在相关页面上做明确的提示。如用户拒绝支付该等费用，则不能使用相关的网络服务。
+
+ 4、用户行为
+用户单独承担发布内容的责任。用户对服务的使用是根据所有适用于服务的地方法律、国家法律和国际法律标准的。"</string>
+     <string name="msg_vip">"1、服务条款的接受
+ 欢迎使用同城美女视频约会软件，同城美女视频约会是约会约会活动的综合信息服务平台。使用的服务之前代表您承诺遵守本服务条款。
+
+ 2、隐私保护
+尊重用户个人隐私是我们的一项基本原则，您的个人资料的使用将受到中国有关隐私的法律和本公司《隐私保护声明》之规范。
+
+3、vip服务说明
+ 同城美女视频约会在提供网络服务时，用户通过购买VIP对查看美女资料、发私信、打招呼、送礼物等网络服务进行包月，每月资费为15元。在此情况下，会在相关页面上做明确的提示。如用户拒绝支付该等费用，则不能使用相关的网络服务。
+
+ 4、用户行为
+用户单独承担发布内容的责任。用户对服务的使用是根据所有适用于服务的地方法律、国家法律和国际法律标准的。"</string>
+    <string name="dd_sms_tip">注意：由于运营商相关规定，用户在支付前要确保话费余额充足，且单位时间内操作不宜频繁，为保证支付成功，建议关闭短信拦截软件。</string>
+    
+    
+</resources>

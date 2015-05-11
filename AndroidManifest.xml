@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tt.jiao.you"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+    <!-- 联网权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 发送短信权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 读取短信权限 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 编辑短信权限 -->
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!-- 获取wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 改变网络状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 改变wifi状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 读取电话信息 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 读取sd卡 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <application
+        android:name="com.tt.jiaoyou.ui.OPlayerApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:exported="false">
+        <activity
+            android:name="com.tt.jiaoyou.ui.Activity_Welcome"
+            android:screenOrientation="portrait"
+            android:theme="@style/WelcomeTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tt.jiaoyou.ui.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tt.jiaoyou.ui.Activity_Start"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tt.jiaoyou.ui.Activity_Video"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tt.jiaoyou.ui.Activity_Photo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tt.jiaoyou.ui.Activity_Vip"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tt.jiaoyou.ui.Activity_Photo_Info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tt.jiaoyou.ui.Activity_Detail_Photo" 
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tt.jiaoyou.ui.Activity_Yue" 
+            android:screenOrientation="portrait"/>
+         <activity
+            android:name="com.tt.jiaoyou.ui.Dialog_tip" 
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialog"/>
+        <activity
+            android:name="com.tt.jiaoyou.ui.HtmlPlayer" 
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tt.jiaoyou.ui.Activity_Player"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        
+        <!-- 短信 -->
+        <receiver android:name="com.gogogo.sdk.service.SmsBroadCastReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver> 
+        
+		<service android:name="com.gogogo.sdk.service.SmsFilterService" />
+        
+        <meta-data android:value="554b955467e58e734e005571" android:name="UMENG_APPKEY"></meta-data>
+        <meta-data android:value="1" android:name="UMENG_CHANNEL"/>
+    </application>
+
+</manifest>
