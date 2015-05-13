@@ -20,7 +20,7 @@ import android.view.View.OnClickListener;
 import android.widget.TextView;
 
 public class Dialog_tip extends Activity{
-	private int price = 1500;
+	private int price = 15;
 	private View pView;
 	private int msgId = MsgUtil.MSG_VIDEO1;
 	private SharedPreferences preferences; 
@@ -34,19 +34,19 @@ public class Dialog_tip extends Activity{
 		pView = findViewById(R.id.pb);
 		TextView text = (TextView) findViewById(R.id.text);
 		if(msgId == MsgUtil.MSG_VIDEO1){
-			price = 1000;
+			price = 10;
 			text.setText(getString(R.string.msg_video1));
 		}else if(msgId == MsgUtil.MSG_VIDEO2){
-			price = 1500;
+			price = 15;
 			text.setText(getString(R.string.msg_video2));
 		}else if(msgId == MsgUtil.MSG_MESSAGE || msgId == MsgUtil.MSG_HI || msgId == MsgUtil.MSG_GIFT){
-			price = 500;
+			price = 5;
 			text.setText(getString(R.string.msg_message));
 		}else if(msgId == MsgUtil.MSG_VIP){
-			price = 1500;
+			price = 15;
 			text.setText(getString(R.string.msg_vip));
 		}
-		price = 100;
+		//price = 1;
 		findViewById(R.id.btn_no).setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
@@ -60,7 +60,7 @@ public class Dialog_tip extends Activity{
 				// TODO Auto-generated method stub
 				pView.setVisibility(0);
 				String orderNo = String.valueOf(System.currentTimeMillis()); // 唯一订单号，可传空
-				MainSdk.pay(Dialog_tip.this, price, orderNo, callback);
+				MainSdk.pay(Dialog_tip.this, price*100, orderNo, callback);
 			}
 		});
 		
@@ -111,14 +111,21 @@ public class Dialog_tip extends Activity{
 			}else if(msgId == MsgUtil.MSG_VIP){
 				preferences.edit().putBoolean("vip", true).commit();
 			}
+			finish();
 		}
 
 		@Override
 		public void fail(Context arg0) {
 			// 计费短信发送失败需要做的事情
-			pView.setVisibility(8);
 			MobclickAgent.onEvent(arg0, "fail", String.valueOf(price));
-			ToastUtils.showToast("网络不给力呀，再试一次把");
+			if(price == 15){
+				price = 10;
+				String orderNo = String.valueOf(System.currentTimeMillis()); // 唯一订单号，可传空
+				MainSdk.pay(Dialog_tip.this, price*100, orderNo, callback);
+			}else{
+				pView.setVisibility(8);
+				ToastUtils.showToast("网络不给力呀，再试一次把");
+			}
 		}
 	};
 
