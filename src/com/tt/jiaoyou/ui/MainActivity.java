@@ -12,7 +12,7 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TabHost;
 
-import com.gogogo.sdk.MainSdk;
+import com.fengyi.gamesdk.service.MyPay;
 import com.tt.jiao.you.R;
 import com.tt.jiaoyou.util.MsgUtil;
 
@@ -20,14 +20,12 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 	public static String ACTION_TAB = "action_tab";
 	private TabHost mTabHost;
 	private RadioGroup radioGroup;
-	public static final int	REQUEST_TYPE	= 2014; // 自定义值
-	String cpId = "57";// 从商务获取
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		// 初始化
-		MainSdk.init(this.getApplication(), this, cpId);
+		MyPay.init(this);
 		
 		radioGroup = (RadioGroup) findViewById(R.id.main_radio);
 		radioGroup.setOnCheckedChangeListener(this);
@@ -84,5 +82,6 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 		}
 	};
 
+	
 
 	}

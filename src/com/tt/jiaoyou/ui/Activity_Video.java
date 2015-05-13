@@ -2,8 +2,6 @@ package com.tt.jiaoyou.ui;
 
 import java.util.ArrayList;
 
-import com.gogogo.sdk.MainSdk;
-import com.gogogo.sdk.task.callback.SmsResultCallback;
 import com.tt.jiao.you.R;
 import com.tt.jiaoyou.adapter.VideoAdpter;
 import com.tt.jiaoyou.bean.VideoBean;
@@ -13,14 +11,12 @@ import com.tt.jiaoyou.view.PullToRefreshView;
 import com.tt.jiaoyou.view.PullToRefreshView.OnFooterRefreshListener;
 import com.tt.jiaoyou.view.PullToRefreshView.OnHeaderRefreshListener;
 import com.tt.jiaoyou.xml.XMLParser;
-import com.umeng.analytics.MobclickAgent;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.view.View;

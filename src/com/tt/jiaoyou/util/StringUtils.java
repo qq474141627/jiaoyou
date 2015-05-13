@@ -12,6 +12,8 @@ import java.util.TimeZone;
 import com.tt.jiaoyou.ui.OPlayerApplication;
 
 import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.telephony.TelephonyManager;
 import android.text.TextPaint;
 
@@ -385,5 +387,23 @@ public class StringUtils {
 			phoneid = "";
 		}
 		return tm.getLine1Number();
+	}
+	
+	public static boolean hasInternet(Context mContext) {
+		ConnectivityManager m = (ConnectivityManager) mContext
+				.getSystemService(Context.CONNECTIVITY_SERVICE);
+		if (m == null) {
+			return false;
+		} else {
+			NetworkInfo[] info = m.getAllNetworkInfo();
+			if (info != null) {
+				for (int i = 0; i < info.length; i++) {
+					if (info[i].getState() == NetworkInfo.State.CONNECTED) {
+						return true;
+					}
+				}
+			}
+		}
+		return false;
 	}
 }
